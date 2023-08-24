@@ -1,0 +1,89 @@
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(20deg, #960055, #98257e, #8d43a7, #6e60cc, #127aeb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.calculator {
+    width: 25vw;
+    height: 80vh;
+    margin: 4em auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 7px 8px 2px;
+}
+
+.row {
+    height: 20%;
+    display: flex;
+}
+
+
+.screen {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 90%;
+    box-shadow: 4px 4px 2px black;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.first {
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 5px 2px;
+}
+
+.logo {
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 10px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px;
+    margin-bottom: 10px;
+}
+
+.btn-row {
+    justify-content: center;
+    gap: 15px
+}
+
+.btn-num {
+    margin-top: 5%;
+    gap: 10px;
+    width: 20%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 2px 2px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px;
+}
+
+.operation {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.cancel {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+@media (501px <= width <=1000px) {
+    .calculator {
+        min-width: 60vw;
+    }
+}
+
+@media (200px <= width <=500px) {
+    .calculator {
+        width: auto;
+    }
+}
